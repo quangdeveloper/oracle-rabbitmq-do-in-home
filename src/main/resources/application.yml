@@ -1,0 +1,111 @@
+
+spring:
+#  rabbitmq:
+#    host: localhost
+#    port: 15672
+#    username: guest
+#    password: guest
+#    exchange: :
+#    address-shuffle-mode: inorder
+#    addresses:
+#    cache:
+#      channel:
+#        checkout-timeout:
+#        size:
+#      connection:
+#        mode: channel
+#        size: 5
+#    channel-rpc-timeout:
+#    connection-timeout:
+#    dynamic: true
+#    listener:
+#      type: direct
+#      direct:
+#        acknowledge-mode: auto
+#        auto-startup: true
+#        consumers-per-queue: 15
+#        de-batching-enabled: true
+#        default-requeue-rejected: true
+#        idle-event-interval: 6
+#        missing-queues-fatal: true
+#        prefetch: 5
+#        retry:
+#          enabled: true
+#          initial-interval: 2
+#          max-attempts: 6
+#          max-interval: 6
+#          multiplier: 5
+#          stateless: true
+#      simple:
+#        acknowledge-mode: auto
+#        auto-startup: true
+#        batch-size:
+#        concurrency:
+#        consumer-batch-enabled: true
+#        de-batching-enabled: true
+#        default-requeue-rejected: true
+#        idle-event-interval:
+#        max-concurrency:
+#        missing-queues-fatal: true
+#        prefetch:
+#        retry:
+#          enabled: true
+#          initial-interval:
+#          max-attempts:
+#          max-interval:
+#          multiplier:
+#          stateless: true
+#    requested-heartbeat:
+#    requested-channel-max:
+#    template:
+#      retry:
+#        max-attempts:
+#        enabled: true
+#        initial-interval:
+#        max-interval:
+#        multiplier:
+#      default-receive-queue:
+#      exchange:
+#      mandatory: true
+#      receive-timeout:
+#      reply-timeout:
+#      routing-key:
+#    publisher-confirm-type: correlated
+#    publisher-returns: true
+#    virtual-host:
+  datasource:
+    url: jdbc:oracle:thin:@127.0.0.1:1522/students
+    username: '"quang"'
+    password: Quang@123
+    driverClassName: oracle.jdbc.OracleDriver
+    hikari:
+      minimumIdle: 5
+      maximumPoolSize: 29
+      idleTimeout: 30000
+      maxLifetime: 2000000
+      connectionTimeout: 30000
+      poolName: pool1
+  redis:
+    database: 0
+    host: 127.0.0.1
+    port: 6379
+    password: testredis@123
+    lettuce:
+      pool:
+        max-active: 30
+        max-idle: 20
+        min-idle: 10
+        max-wait: 60000
+        time-between-eviction-runs: 60000
+#    sentinel:
+#      password: testredis@123
+#      nodes:
+#        - 10.20.27.20:6379
+#        - 10.22.7.112:26379
+#      master: redismaster
+#    connect-timeout: 500000
+
+
+
+
+
